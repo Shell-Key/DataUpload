@@ -69,24 +69,7 @@ footer {
 </style>
 </head>
 <body>
-const { Octokit } = require('@octokit/rest');
 
-const octokit = new Octokit({ auth: 'your_github_token' });
-
-async function updateFile(content) {
-  const response = await octokit.repos.createOrUpdateFileContents({
-    owner: 'Shell-Key',
-    repo: 'DataUpload',
-    path: 'path/to/your/file.html',
-    message: 'Update data from Adalo',
-    content: Buffer.from(content).toString('base64'),
-  });
-  return response;
-}
-
-// Example content to update
-const newContent = '<html><body>New Data from Adalo</body></html>';
-updateFile(newContent).then(response => console.log(response));
 <h2>Work Package #000001</h2>
 <p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
 <p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
