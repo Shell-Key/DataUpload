@@ -11,7 +11,7 @@ const App = () => {
           'https://api.adalo.com/v0/apps/c05cad5f-b429-4178-901f-2de8e69be452/collections/t_35bi25u3qrcfdf9qrd3cy4jp1',
           {
             headers: {
-              Authorization: 'Bearer {5y2845qm0ejae7au4oc277ew3}'
+              Authorization: 'Bearer 5y2845qm0ejae7au4oc277ew3'
             }
           }
         );
